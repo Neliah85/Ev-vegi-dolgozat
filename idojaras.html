@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Időjárás Előrejelzés</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Időjárás Előrejelzés</h1>
+            <button onclick="loadWeatherData()">Adatok Betöltése</button>
+            <button onclick="showMinTemperature()">7 Nap Legalacsonyabb Hőmérséklete</button>
+            <button onclick="showMaxWindSpeed()">7 Nap Legnagyobb Szélsebessége</button>
+            <button onclick="showMaxRainfall()">Melyik Nap Esett a Legtöbb Csapadék</button>
+            <button onclick="downloadData()">Adatok Letöltése</button>
+            <p id="result"></p>
+            <canvas id="temperatureChart" width="400" height="200"></canvas>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
