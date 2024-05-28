@@ -54,7 +54,7 @@ function showMaxWindSpeed() {
 
 function showMaxRainfall() {
     const maxRainDay = weatherData.reduce((maxDay, currentDay) => currentDay.rain > maxDay.rain ? currentDay : maxDay, weatherData[0]);
-    document.getElementById('result').innerText = `A legtöbb csapadék ${maxRainDay.time} napján esett: ${maxRainDay.rain} mm`;
+    document.getElementById('result').innerText = `A legtöbb csapadék ${maxRainDay.time} napján esett/fog esni: ${maxRainDay.rain} mm`;
 }
 
 function downloadData() {
